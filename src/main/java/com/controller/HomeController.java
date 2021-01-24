@@ -14,7 +14,7 @@ import com.model.Home;
 import com.repository.HomeRepo;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("")
 @CrossOrigin(origins = "*")
 public class HomeController {
 	
@@ -25,7 +25,7 @@ public class HomeController {
 	private HomeRepo homeRepo;
 	
 	//Find all homes
-	@GetMapping("/allHomes")
+	@GetMapping("/")
 	public List<Home> findAllHomes() {
 		return homeRepo.findAll();
 	}
